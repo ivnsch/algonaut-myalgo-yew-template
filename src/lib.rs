@@ -52,7 +52,7 @@ impl Component for Model {
                 msg
             }),
             Msg::Send => {
-                let address = self.address.clone();
+                let address = self.address;
                 let payment_inputs = self.payment_inputs.clone();
                 self.link.send_future(async move {
                     Msg::ShowPaymentResultMsg(match address {
