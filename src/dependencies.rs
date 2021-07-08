@@ -1,5 +1,5 @@
 use algonaut::algod::{v2::Algod, AlgodBuilder};
-use my_algo::my_algo::MyAlgo;
+use my_algo::MyAlgo;
 
 use crate::provider::Provider;
 
