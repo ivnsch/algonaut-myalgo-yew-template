@@ -1,6 +1,7 @@
 use algonaut::algod::{v2::Algod, AlgodBuilder};
+use my_algo::my_algo::MyAlgo;
 
-use crate::{my_algo::MyAlgo, provider::Provider};
+use crate::provider::Provider;
 
 pub fn algod() -> Algod {
     AlgodBuilder::new()

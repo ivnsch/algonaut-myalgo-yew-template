@@ -1,10 +1,7 @@
 #![recursion_limit = "1024"]
 
-mod bindings;
 mod dependencies;
-mod my_algo;
 mod provider;
-mod to_my_algo_transaction;
 
 use wasm_bindgen::prelude::*;
 use yew::prelude::*;

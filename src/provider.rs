@@ -1,4 +1,3 @@
-use crate::my_algo::MyAlgo;
 use algonaut::{
     algod::v2::Algod,
     core::{Address, MicroAlgos},
@@ -6,6 +5,7 @@ use algonaut::{
 };
 use anyhow::{anyhow, Result};
 use log::debug;
+use my_algo::my_algo::MyAlgo;
 
 pub struct Provider {
     algod: Algod,
