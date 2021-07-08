@@ -1,9 +1,12 @@
 # Algonaut + My Algo + Yew template
+
 ![Continuous integration](https://github.com/i-schuetz/algonaut-myalgo-yew-template/actions/workflows/actions.yml/badge.svg)
 
-Template to sign [Algonaut](https://github.com/manuelmauro/algonaut) transactions with [My Algo wallet](https://github.com/randlabs/myalgo-connect) in a [Yew](https://github.com/yewstack/yew) application.
+Sign [Algonaut](https://github.com/manuelmauro/algonaut) transactions with [My Algo wallet](https://github.com/randlabs/myalgo-connect) in a [Yew](https://github.com/yewstack/yew) application.
 
 ![ScreenShot](screen/screenr.gif)
+
+⚠️ [my-algo-rust-adapter](https://github.com/i-schuetz/my-algo-rust-adapter) example project (see warning).
 
 ## Pre-requisites
 
