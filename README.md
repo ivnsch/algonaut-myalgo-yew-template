@@ -54,7 +54,7 @@ Update [dependencies.rs](https://github.com/i-schuetz/algonaut-myalgo-yew-templa
 
 ### Testing with sandbox or private network
 
-To sign transactions for a private network or sandbox using My Algo, you just have to share an account between them. The network selected on My Algo doesn't matter (you probably want to use TestNet, for general bookkeeping).
+To sign transactions for a private network or sandbox using My Algo, you just have to share an account with your node. The network selected on My Algo doesn't matter (you probably want to use TestNet, for general bookkeeping).
 
 To do this, you can either export the mnemonic from your node:
 
