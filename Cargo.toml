@@ -19,7 +19,7 @@ yewtil = { version = "0.3" }
 chrono = { version = "0.4", features = ["wasmbind"] }
 wasm-bindgen-futures = "0.4.24"
 js-sys = "0.3.51"
-algonaut = { git = "https://github.com/manuelmauro/algonaut", branch = "main" }
+algonaut = "0.3.0"
 my-algo = { git = "https://github.com/i-schuetz/my-algo-rust-adapter", branch = "main" }
 anyhow = "1.0"
 serde = {version = "1.0", features = ["derive"]}

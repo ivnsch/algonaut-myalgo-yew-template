@@ -44,17 +44,13 @@ impl Provider {
     }
 
     async fn create_payment_txn(&self, data: &SendPaymentData) -> Result<Transaction> {
-        let params = self.algod.transaction_params().await?;
-        Ok(TxnBuilder::new()
-            .sender(data.sender)
-            .first_valid(params.last_round)
-            .last_valid(params.last_round + 10)
-            .genesis_id(params.genesis_id)
-            .genesis_hash(params.genesis_hash)
-            .fee(data.fee)
-            .note("Hello Rust! 🦀".as_bytes().to_vec())
-            .payment(Pay::new().amount(data.amount).to(data.receiver).build())
-            .build())
+        let params = self.algod.suggested_transaction_params().await?;
+        Ok(TxnBuilder::with(
+            params,
+            Pay::new(data.sender, data.receiver, data.amount).build(),
+        )
+        .note("Hello Rust! 🦀".as_bytes().to_vec())
+        .build())
     }
 }
 
